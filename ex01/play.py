@@ -17,7 +17,7 @@ def shutudai(alphabet):
         if c not in kesson: 
             print(c, end=" ")
     print()
-    print("デバッグ用欠損文字：", kesson)
+    #print("デバッグ用欠損文字：", kesson)
     return kesson
 
 def kaito(ans):
@@ -25,7 +25,7 @@ def kaito(ans):
     a=input("回答")
     
     if int(a) == lost:
-        print("正解")
+        print("正解！！良いね！！")
         for i in range(lost):
             b = input(f"{i+1}文字目は？：")
             if b not in ans:
@@ -36,7 +36,7 @@ def kaito(ans):
     else:
         print("不正解")
         kaito(ans)
-    print("正解")
+    print("正解！すごい！！")
 
 if __name__ == "__main__":
 

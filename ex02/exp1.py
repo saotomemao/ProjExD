@@ -18,7 +18,7 @@ def click_clear(event):
 
 
 root = tk.Tk()
-root.geometry("300x600")
+root.geometry("400x600")
 
 entry = tk.Entry(root, width=10, font=(", 40"), justify="right")
 entry.grid(row=0, column=0, columnspan=3)
@@ -27,7 +27,7 @@ r, c = 1, 0
 numbers = list(range(9, -1, -1))
 operators = ["+", "-", "*", "/", "(",")","."]#演算子
 for i, num in enumerate(numbers+operators, 1):
-    btn = tk.Button(root, text=f"{num}", font=("", 30), width=3, height=1)
+    btn = tk.Button(root, text=f"{num}", font=("", 30), width=4, height=1)
     btn.bind("<1>", click_number)
     btn.grid(row=r, column=c)
     c += 1
@@ -35,11 +35,11 @@ for i, num in enumerate(numbers+operators, 1):
         r += 1
         c = 0
 
-btn = tk.Button(root, text=f"=", font=("", 30), width=3, height=1)
+btn = tk.Button(root, text=f"=", font=("", 30), width=4, height=1)
 btn.bind("<1>", click_equal)
 btn.grid(row=r, column=c)
 
-btn = tk.Button(root, text=f"C", font=("", 30), width=3, height=1)
+btn = tk.Button(root, text=f"C", font=("", 30), width=4, height=1)
 btn.bind("<1>", click_clear)
 btn.grid(row=r, column=c+1)
 

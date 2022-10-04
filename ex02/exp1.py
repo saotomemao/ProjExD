@@ -25,7 +25,7 @@ entry.grid(row=0, column=0, columnspan=3)
 
 r, c = 1, 0
 numbers = list(range(9, -1, -1))
-operators = ["+", "-", "*", "/", "(",")"]
+operators = ["+", "-", "*", "/", "(",")","."]#演算子
 for i, num in enumerate(numbers+operators, 1):
     btn = tk.Button(root, text=f"{num}", font=("", 30), width=3, height=1)
     btn.bind("<1>", click_number)

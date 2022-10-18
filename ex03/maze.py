@@ -50,9 +50,6 @@ if __name__ == "__main__":
 
     # 練習9,10
     maze_lst = mm.make_maze(15, 9)
-    #print(len(maze_lst)) 9x15
-
-    # print(maze_lst) # 1:壁／0:床
     mm.show_maze(canv, maze_lst) 
 
     # 練習3

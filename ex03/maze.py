@@ -7,12 +7,10 @@ def key_down(event):
     global key
     key = event.keysym
 
-
 # 練習6
 def key_up(event):
     global key
     key = ""
-
 
 # 練習7
 def main_proc():
@@ -44,28 +42,22 @@ if __name__ == "__main__":
     root = tk.Tk()
     root.title("迷えるこうかとん") # 練習1
 
-    # 練習2
-    canv = tk.Canvas(root, width=1500, height=900, bg="black")
+    canv = tk.Canvas(root, width=1500, height=900, bg="black")# 練習2
     canv.pack()
 
-    # 練習9,10
-    maze_lst = mm.make_maze(15, 9)
+    maze_lst = mm.make_maze(15, 9)# 練習9,10
     mm.show_maze(canv, maze_lst) 
 
-    # 練習3
-    tori = tk.PhotoImage(file="ex03/fig/5.png") 
+    tori = tk.PhotoImage(file="ex03/fig/5.png") # 練習3
     mx, my = 1, 1 # 練習11
     cx, cy = mx*100+50, my*100+50
     canv.create_image(cx, cy, image=tori, tag="tori")
 
-    # 練習4
-    key = "" # 現在押されているキーを表す
+    key = "" # 現在押されているキーを表す# 練習4
 
-    # 練習5,6
-    root.bind("<KeyPress>", key_down)
+    root.bind("<KeyPress>", key_down)# 練習5,6
     root.bind("<KeyRelease>", key_up)    
 
-    # 練習7
     main_proc()
 
     root.mainloop()

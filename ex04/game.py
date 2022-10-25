@@ -34,7 +34,7 @@ def main():
     # 練習5
     bomb_sfc = pg.Surface((20, 20)) # 空のSurface
     bomb_sfc.set_colorkey((0, 0, 0)) # 四隅の黒い部分を透過させる
-    pg.draw.circle(bomb_sfc, (255, 0, 0), (10, 10), 10) # 円を描く
+    pg.draw.circle(bomb_sfc, (255, 0, 0), (10, 10), 10) 
     bomb_rct = bomb_sfc.get_rect()
     bomb_rct.centerx = randint(0, scrn_rct.width)
     bomb_rct.centery = randint(0, scrn_rct.height)

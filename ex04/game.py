@@ -16,7 +16,6 @@ def check_bound(obj_rct, scr_rct):
         tate = -1
     return yoko, tate
 
-
 def main():
     # 練習1
     pg.display.set_caption("逃げろ！こうかとん")
@@ -40,10 +39,8 @@ def main():
     bomb_rct.centerx = randint(0, scrn_rct.width)
     bomb_rct.centery = randint(0, scrn_rct.height)
 
-    
     # 練習6
     vx, vy = +1, +1
-
 
     clock = pg.time.Clock() # 練習1
     while True:

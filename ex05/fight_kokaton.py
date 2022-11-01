@@ -15,7 +15,6 @@ class Screen:
         self.sfc.blit(self.bgi_sfc, self.bgi_rct)
 
 
-
 class Bird:
     key_delta = {
         pg.K_UP:    [0, -1],
